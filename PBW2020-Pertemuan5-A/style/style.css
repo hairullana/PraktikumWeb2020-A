@@ -1,0 +1,97 @@
+/* tag body */
+body {
+    /* mengatur jenis font */
+    font-family: sans-serif;
+}
+
+/* id header */
+#header {
+    /* mengatur tinggi minimal */
+    min-height: 200px;
+    /* memberi background */
+    background-image: url(../assets/background.jpg);
+    /* agar gambar lebih presisi dengan layout */
+    background-size: cover;
+    /* supaya letak gambar fixed meskipun di scroll */
+    background-attachment: fixed;
+    /* mengatur warna text */
+    color: white;
+}
+
+/* h1 pada id header */
+#header h1 {
+    /* mengatur padding */
+    padding: 70px 0px 0px 100px;
+}
+
+/* h4 pada id header */
+#header h4 {
+    /* mengatur padding */
+    padding: 0px 0px 50px 100px;
+}
+
+/* id form */
+#form {
+    /* mengatur margin kiri dan kanan sebesar 50px */
+    margin: 0px 50px;
+}
+
+/* tag table */
+table {
+    /* lebar 100% */
+    width: 100%;
+}
+
+/* tag td */
+td {
+    /* padding sebesar 5px */
+    padding: 5px;
+}
+
+/* class input, select, textarea */
+.input,
+select,
+textarea {
+    /* lebar sebesar 99% */
+    width: 99%;
+    /* ukuran font 14px */
+    font-size: 14px;
+    /* tebal border */
+    border-width: 1px;
+    /* warna border */
+    border-color: #cccccc;
+    /* gaya border */
+    border-style: solid;
+    /* padding */
+    padding: 5px;
+    /* mengatur shadow */
+    box-shadow: 0px 0px 2px 0px rgba(42, 42, 42, .35);
+}
+
+/* class daftar */
+.daftar {
+    /* mengatur shadow */
+    box-shadow: inset 0px 1px 0px 0px #a4e271;
+    /* warna bg */
+    background-color: #89c403;
+    /* mengatur border radius */
+    border-radius: 6px;
+    /* mengatur border */
+    border: 1px solid #74b807;
+    /* mengatur display */
+    display: inline-block;
+    /* warna text */
+    color: #ffffff;
+    /* ukuran font */
+    font-size: 14px;
+    /* font wight */
+    font-weight: bold;
+    /* padding */
+    padding: 6px 24px;
+}
+
+/* jika class daftar di klik */
+.daftar:hover {
+    /* atur bg color */
+    background-color: #77a809;
+}

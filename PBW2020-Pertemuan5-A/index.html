@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- tag dokumen html -->
+<html lang="en">
+<!-- tag head -->
+
+<head>
+    <!-- tag meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- memanggil icon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/gif" sizes="16x16">
+    <!-- memanggil css -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- judul -->
+    <title>Halaman Pendaftaran</title>
+</head>
+
+<!-- tag body -->
+<body>
+
+    <!-- div dengan id header -->
+    <div id="header">
+        <!-- h1 dengan class header -->
+        <h1 class="header">Halaman Pendaftaran</h1>
+        <!-- h4 dengan class header -->
+        <h4 class="header">Pendaftaran sebagai peserta dalam RAKERWIL (Rapat Kerja Wilayah) Bali dan Nusa Tenggara 2020</h4>
+    </div>
+
+    <!-- div dengan id form -->
+    <div id="form">
+        <!-- tag pembuka form -->
+        <form action="">
+            <!-- tag table dengan border = 0 -->
+            <table border="0">
+                <!-- tag row -->
+                <tr>
+                    <!-- 6 tag table data dengan width 15% -->
+                    <td width=15%></td>
+                    <td width=15%></td>
+                    <td width=15%></td>
+                    <td width=15%></td>
+                    <td width=15%></td>
+                    <td width=15%></td>
+                </tr>
+                <!-- tag row -->
+                <tr>
+                    <!-- 2 buah tag table data dengan colspan = 3 yang berisi input text -->
+                    <td colspan="3"><input width=100% type="text" id="namaLengkap" class="input" placeholder="Nama Lengkap"></td>
+                    <td colspan="3"><input type="text" id="namaPanggilan" class="input" placeholder="Nama Panggilan"></td>
+                </tr>
+                <!-- tag row -->
+                <tr>
+                    <!-- 2 buah tag table data dengan colspan = 3 yang berisi input text -->
+                    <td colspan="3"><input type="text" id="noTelp" class="input" placeholder="No. Telp"></td>
+                    <td colspan="3"><input type="text" id="email" class="input" placeholder="Email"></td>
+                </tr>
+                <!-- tag row -->
+                <tr>
+                    <!-- 3 buah tag table data dengan colspan = 2  yang berisi input text dan form select -->
+                    <td colspan="2"><input type="text" id="tglLahir" class="input" placeholder="Tanggal Lahir"></td>
+                    <td colspan="2"><input type="text" id="tempatLahir" class="input" placeholder="Tempat Lahir"></td>
+                    <td colspan="2">
+                        <!-- form select untuk pilihan agama -->
+                        <select name="agama" id="agama">
+                            <option disabled selected>Agama</option>
+                            <option value="islam">Islam</option>
+                            <option value="kristen">Kristen</option>
+                            <option value="katolik">Katolik</option>
+                            <option value="hindu">Hindu</option>
+                            <option value="buddha">Buddha</option>
+                            <option value="khonghucu">Khonghucu</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- tag row -->
+                <tr>
+                    <!-- 3 buah table data dengan colspan = 2 yang berisi input text -->
+                    <td colspan="2"><input type="univ" id="univ" class="input" placeholder="Universitas"></td>
+                    <td colspan="2"><input type="fakJur" id="fakJur" class="input" placeholder="Fakultas/Jurusan"></td>
+                    <td colspan="2"><input type="jabatan" id="jabatan" class="input" placeholder="Jabatan"></td>
+                </tr>
+                <!-- table row -->
+                <tr>
+                    <!-- tabel data dengan colspan = 6 yang berisi textarea -->
+                    <td colspan="6"><textarea name="Alamat Asal" id="alamat" class="input" cols=100% rows="1" placeholder="Alamat Asal"></textarea></td>
+                </tr>
+                <!-- table row -->
+                <tr>
+                    <!-- 3 table data dengan colspan = 2 yang berisi input file -->
+                    <td colspan="2"><label for="foto">Foto Almameter</label><br><input type="file" id="foto" name="foto"></td>
+                    <td colspan="2"><label for="ktp">Scan KTP</label><br><input type="file" id="ktp" name="ktp"></td>
+                    <td colspan="2"></td>
+                </tr>
+                <!-- table row -->
+                <tr>
+                    <!-- table data berisi button type submit -->
+                    <td><button type="submit" class="daftar">Daftar</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
