@@ -21,19 +21,19 @@ body {
 /* h1 pada id header */
 #header h1 {
     /* mengatur padding */
-    padding: 70px 0px 0px 100px;
+    padding: 70px 0px 0px 130px;
 }
 
 /* h4 pada id header */
 #header h4 {
     /* mengatur padding */
-    padding: 0px 0px 50px 100px;
+    padding: 0px 0px 50px 130px;
 }
 
 /* id form */
 #form {
     /* mengatur margin kiri dan kanan sebesar 50px */
-    margin: 0px 50px;
+    margin: 0px 130px;
 }
 
 /* tag table */
