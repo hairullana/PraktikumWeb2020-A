@@ -18,49 +18,58 @@
   <body>
     <div class="container">  
       <div class="row">
-        <div class="col-md-6 offset-md-3 mt-5">
+        <div class="col-md-6 offset-md-3 my-5">
 
           <!-- card -->
-          <div class="card shadow rounded">
+          <div class="card shadow rounded bg-primary">
             <!-- header -->
             <div class="card-header pt-4">
-              <h1 class="display-4 text-center text-secondary">My Calculator</h1>
+              <h1 class="display-4 text-center text-white">My Calculator</h1>
             </div>
             <!-- body -->
             <div class="card-body pb-5">
               <div class="row">
+                <div class="col">
+                  <!-- tampilan hasil -->
+                  <input type="number" class="shadow form-control mb-3" id="hasil" name="hasil" placeholder="Value" disabled>
+                </div>
+              </div>
+              <div class="row">
                 <div class="col-md-6">
+                  <!-- nomor pertama -->
                   <input type="number" class="shadow form-control mb-3" name="num1" id="num1" placeholder="First Number">
+                  <!-- nomor kedua -->
                   <input type="number" class="shadow form-control mb-3" name="num2" id="num2" placeholder="Second Number">
                 </div>
                 <div class="col-md-6">
                   <div class="row">
+                    <!-- pertambahan -->
                     <div class="col-md-4">
-                      <button class="btn font-weight-bold btn-outline-secondary btn-block mb-3 shadow" type="button" onclick="addition()">+</button>
+                      <button class="btn font-weight-bold btn-outline-light btn-block mb-3 shadow" type="button" onclick="addition()">+</button>
                     </div>
+                    <!-- pengurangan -->
                     <div class="col md-4">
-                      <button class="btn font-weight-bold btn-outline-secondary btn-block mb-3 shadow" type="button" onclick="subtraction()">-</button>
+                      <button class="btn font-weight-bold btn-outline-light btn-block mb-3 shadow" type="button" onclick="subtraction()">-</button>
                     </div>
+                    <!-- perpangkatan -->
                     <div class="col-md-4">
-                      <button class="btn font-weight-bold btn-outline-secondary btn-block mb-3 shadow" type="button" onclick="rank()">^</button>
+                      <button class="btn font-weight-bold btn-outline-light btn-block mb-3 shadow" type="button" onclick="rank()">^</button>
                     </div>
                   </div>
                   <div class="row">
+                    <!-- perkalian -->
                     <div class="col-md-4">
-                      <button class="btn font-weight-bold btn-outline-secondary btn-block mb-3 shadow" type="button" onclick="multiplication()">x</button>
+                      <button class="btn font-weight-bold btn-outline-light btn-block mb-3 shadow" type="button" onclick="multiplication()">x</button>
                     </div>
+                    <!-- pembagian -->
                     <div class="col-md-4">
-                      <button class="btn font-weight-bold btn-outline-secondary btn-block mb-3 shadow" type="button" onclick="division()">/</button>
+                      <button class="btn font-weight-bold btn-outline-light btn-block mb-3 shadow" type="button" onclick="division()">/</button>
                     </div>
+                    <!-- modulus -->
                     <div class="col-md-4">
-                      <button class="btn font-weight-bold btn-outline-secondary btn-block mb-3 shadow" type="button" onclick="modulus()">%</button>
+                      <button class="btn font-weight-bold btn-outline-light btn-block mb-3 shadow" type="button" onclick="modulus()">%</button>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <input type="number" class="shadow form-control" id="hasil" name="hasil" placeholder="Value">
                 </div>
               </div>
             </div>
@@ -73,36 +82,54 @@
 
 
     <script> 
-        function addition(){
-          var num1 = parseFloat(document.getElementById("num1").value);
-          var num2 = parseFloat(document.getElementById("num2").value);
-          document.getElementById("hasil").value = num1+num2;
-        }
-        function subtraction(){
-          var num1 = parseFloat(document.getElementById("num1").value);
-          var num2 = parseFloat(document.getElementById("num2").value);
-          document.getElementById("hasil").value = num1-num2;
-        }
-        function multiplication(){
-          var num1 = parseFloat(document.getElementById("num1").value);
-          var num2 = parseFloat(document.getElementById("num2").value);
-          document.getElementById("hasil").value = num1*num2;
-        }
-        function division(){
-          var num1 = parseFloat(document.getElementById("num1").value);
-          var num2 = parseFloat(document.getElementById("num2").value);
-          document.getElementById("hasil").value = num1/num2;
-        }
-        function rank(){
-          var num1 = parseFloat(document.getElementById("num1").value);
-          var num2 = parseFloat(document.getElementById("num2").value);
-          document.getElementById("hasil").value = Math.pow(num1,num2);
-        }
-        function modulus(){
-          var num1 = parseFloat(document.getElementById("num1").value);
-          var num2 = parseFloat(document.getElementById("num2").value);
-          document.getElementById("hasil").value = num1%num2;
-        }
+      // fungsi pertambahan
+      function addition(){
+        // ambil nilai inputan
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        // tampilkan di form hasil
+        document.getElementById("hasil").value = num1+num2;
+      }
+      // fungsi pengurangan
+      function subtraction(){
+        // ambil nilai inputan
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        // tampilkan di form hasil
+        document.getElementById("hasil").value = num1-num2;
+      }
+      // fungsi perkalian
+      function multiplication(){
+        // ambil nilai inputan
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        // tampilkan di form hasil
+        document.getElementById("hasil").value = num1*num2;
+      }
+      // fungsi pembagian
+      function division(){
+        // ambil nilai inputan
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        // tampilkan di form hasil
+        document.getElementById("hasil").value = num1/num2;
+      }
+      // fungsi perpangkatan
+      function rank(){
+        // ambil nilai inputan
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        // tampilkan di form hasil
+        document.getElementById("hasil").value = Math.pow(num1,num2);
+      }
+      // fungsi modulus
+      function modulus(){
+        // ambil nilai inputan
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        // tampilkan di form hasil
+        document.getElementById("hasil").value = num1%num2;
+      }
     </script>
   </body>
 </html>
