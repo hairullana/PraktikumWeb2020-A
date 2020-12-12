@@ -1,0 +1,12 @@
+1. Ekspor mahasiswa.sql ke database "mahasiswa" (sudah terisi data)
+2. Karena password terenskripsi, ini adalah data akunnya ...
+    AKUN ADMIN =
+    username : root
+    password : root
+
+    AKUN PEGAWAI =
+    username : hairul
+    password : hairul
+
+    username : lana
+    password : lana
